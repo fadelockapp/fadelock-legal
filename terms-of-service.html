@@ -4,162 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Service — Fadelock</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Fadelock Terms of Service. Read the terms governing your use of the Fadelock password generator and vault.">
+  <meta name="theme-color" content="#0D0F14">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back-link">&larr; Back to Fadelock Legal</a>
-
-    <h1>Terms of Service</h1>
-    <p class="subtitle">Fadelock — Password Generator &amp; Vault</p>
-    <p class="effective-date">Effective Date: April 25, 2026 &middot; Last Updated: April 25, 2026</p>
-
-    <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing, or using the Fadelock application (the "App"), you agree to be bound by these Terms of Service (the "Terms"). If you do not agree, you must not use the App. We reserve the right to modify these Terms at any time. Material changes will be communicated through an in-app notification, and your continued use constitutes acceptance.</p>
-
-    <h2>2. Description of Service</h2>
-    <p>Fadelock is a <strong>zero-knowledge, local-first</strong> password generator and encrypted vault. The App provides password generation, AES-256-CBC encrypted credential storage, breach monitoring, family sharing, and security tools. All data is encrypted on your device with a key that only you possess. We have no ability to access, read, or recover your data.</p>
-    <table>
-      <thead>
-        <tr><th>Feature</th><th>Availability</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Password generation</td><td>All users (limits vary by tier)</td></tr>
-        <tr><td>Encrypted vault</td><td>Paid subscribers</td></tr>
-        <tr><td>Breach monitoring (HIBP k-anonymity)</td><td>All users</td></tr>
-        <tr><td>Cloud sync (encrypted ciphertext only)</td><td>Pro and Family subscribers</td></tr>
-        <tr><td>Family sharing (up to 5 members)</td><td>Family subscribers</td></tr>
-        <tr><td>Credential sharing (encrypted, 24-hour expiry)</td><td>Family subscribers</td></tr>
-        <tr><td>Password expiry reminders</td><td>All users</td></tr>
-        <tr><td>Dark web monitoring</td><td>All users</td></tr>
-        <tr><td>Security dashboard</td><td>All users</td></tr>
-        <tr><td>Encrypted audit log</td><td>All users</td></tr>
-      </tbody>
-    </table>
-
-    <h2>3. Customer Responsibility</h2>
-    <blockquote>
-      <p><strong>Fadelock is a security tool. You are solely and entirely responsible for the security of your own data.</strong> We provide industry-standard encryption and security features, but we do not store, manage, or have access to your information.</p>
-    </blockquote>
-
-    <h3>3.1 Encryption Key</h3>
-    <p>Your encryption key is generated locally on your device and stored in the device's hardware-backed secure enclave (iOS Keychain or Android Keystore). <strong>We do not store, transmit, or possess any copy of your encryption key.</strong> If you lose access to your encryption key for any reason — including device reset, device loss, uninstalling the App, or hardware failure — your encrypted data is <strong>permanently and irreversibly unrecoverable.</strong> We cannot help you recover it. You are strongly advised to use the key backup feature in Settings to record your encryption key in a secure location outside the App.</p>
-
-    <h3>3.2 Device Security</h3>
-    <p>The security of your vault is only as strong as the security of your device. You are responsible for keeping your device secure, including using a strong device passcode, keeping your operating system updated, and not jailbreaking or rooting your device. If your device is compromised, your data may be at risk regardless of the App's encryption.</p>
-
-    <h3>3.3 Biometric Authentication</h3>
-    <p>The App uses biometric authentication (Face ID, Touch ID, or fingerprint) to protect access to the vault and sensitive operations. Biometric data is processed entirely by your device's operating system and never touches Fadelock. You are responsible for ensuring that only authorized biometric profiles are enrolled on your device.</p>
-
-    <h3>3.4 Vault Backups</h3>
-    <p>If you export a vault backup, that file is your responsibility. Backup files are encrypted and integrity-verified with HMAC-SHA256, but if you store them in an insecure location, they may be at risk.</p>
-
-    <h3>3.5 Shared Credentials</h3>
-    <p>If you share credentials with family members, you do so at your own discretion and risk. Once a recipient saves a shared credential, it is under their control. We are not responsible for how shared credentials are subsequently handled.</p>
-
-    <h3>3.6 Promo and Developer Codes</h3>
-    <p>Promotional codes are for personal use only, may be redeemed once, and cannot be exchanged for cash. Biometric authentication is required before redemption. We reserve the right to revoke codes obtained fraudulently.</p>
-
-    <h2>4. Subscription Plans and Pricing</h2>
-
-    <h3>4.1 Available Plans</h3>
-    <table>
-      <thead>
-        <tr><th>Plan</th><th>Monthly</th><th>Yearly</th><th>Key Limits</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Free</td><td>$0</td><td>$0</td><td>1 generation per 12 hours, max 10 chars, ads displayed</td></tr>
-        <tr><td>Pro</td><td>$0.99</td><td>$9.99</td><td>Unlimited generation, 15-char max, 20 vault credentials, cloud sync, no ads</td></tr>
-        <tr><td>Family</td><td>$1.49</td><td>$14.99</td><td>All Pro features + up to 5 members, 30 credentials per member, credential sharing</td></tr>
-        <tr><td>Remove Ads</td><td>$3.99 (one-time)</td><td>—</td><td>Permanently removes ads for free-tier users</td></tr>
-      </tbody>
-    </table>
-
-    <h3>4.2 Billing and Renewal</h3>
-    <p>Subscriptions are billed through the Apple App Store or Google Play Store. By subscribing, you authorize recurring charges. Subscriptions renew automatically unless cancelled at least 24 hours before the renewal date.</p>
-
-    <h3>4.3 Cancellation and Refunds</h3>
-    <p>You may cancel at any time through your device's store settings. You retain access to paid features until the end of the current billing period. Refunds are handled by Apple or Google per their respective policies. We do not process refunds directly.</p>
-
-    <h3>4.4 Price Changes</h3>
-    <p>We may change pricing with advance notice. Changes take effect at the start of the next billing period. You may cancel before the new price applies.</p>
-
-    <h2>5. Family Plan Terms</h2>
-    <p>The Family plan holder manages the family group and is the billing account holder. Up to 5 members (including the holder) may join. Members are invited via encrypted deep links. The plan holder may remove members at any time; removed members lose paid features immediately.</p>
-    <p>Each family member maintains their own independent vault with their own encryption key. <strong>The plan holder cannot access, view, or manage other members' credentials.</strong> Each member is subject to the per-member storage limit (30 credentials).</p>
-
-    <h2>6. Acceptable Use</h2>
-    <p>You agree to use the App only for lawful purposes. You shall not: attempt to reverse-engineer, decompile, or derive the source code of the App (except as permitted by law); attempt to bypass or circumvent any security features or encryption; use automated tools to overload or disrupt the service; create multiple accounts to exploit free-tier limits or promotional codes; or distribute or sell promotional codes without authorization.</p>
-
-    <h2>7. Intellectual Property</h2>
-    <p>The App, including its design, code, and trademarks, is owned by Fadelock and protected by applicable intellectual property laws. Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App on your personal device for personal, non-commercial use. You retain ownership of all credential data you store in the App.</p>
-
-    <h2>8. Disclaimer of Warranties</h2>
-    <blockquote>
-      <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
-    </blockquote>
-    <p>We employ industry-standard encryption (AES-256-CBC), hardware-backed key storage, certificate pinning, and biometric authentication. However, no system is entirely immune to all threats. You use the App at your own risk and acknowledge that the security of your data ultimately depends on your own actions (see Section 3).</p>
-    <p>We do not guarantee the accuracy or completeness of breach monitoring data from third-party services. The absence of a breach alert does not guarantee your credentials have not been compromised.</p>
-
-    <h2>9. Limitation of Liability</h2>
-    <blockquote>
-      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, FADELOCK SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP.</p>
-    </blockquote>
-    <table>
-      <thead>
-        <tr><th>Scenario</th><th>Why We Are Not Liable</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Lost encryption key</td><td>We never possess your key and cannot recover it</td></tr>
-        <tr><td>Data loss from device reset or uninstall</td><td>Data is stored locally; device management is your responsibility</td></tr>
-        <tr><td>Third-party data breaches</td><td>We do not control third-party services where you use stored passwords</td></tr>
-        <tr><td>Device compromise (jailbreak, malware)</td><td>Device security is your responsibility</td></tr>
-        <tr><td>Cloud sync interruptions</td><td>Network and server availability may vary</td></tr>
-        <tr><td>Shared credential misuse</td><td>You choose what to share and with whom</td></tr>
-      </tbody>
-    </table>
-    <p>Our total aggregate liability for all claims shall not exceed the amount you paid in subscription fees during the 12 months preceding the claim, or fifty dollars ($50), whichever is greater.</p>
-
-    <h2>10. Indemnification</h2>
-    <p>You agree to indemnify and hold harmless Fadelock and its officers, directors, employees, and agents from any claims, liabilities, damages, and expenses arising from: your use of the App, your violation of these Terms, your violation of any third-party rights, or your sharing of credentials with others.</p>
-
-    <h2>11. Termination</h2>
-    <p>You may stop using the App at any time. Uninstalling removes all local data. To request deletion of cloud-synced ciphertext, contact us at the address below.</p>
-    <p>We may suspend or terminate your access for violation of these Terms, fraudulent activity, or conduct harmful to other users. Upon termination, your license is immediately revoked. Sections 3, 8, 9, 10, and 12 survive termination.</p>
-
-    <h2>12. Dispute Resolution</h2>
-    <p>These Terms are governed by the laws of the United States Virgin Islands. Before formal proceedings, you agree to attempt informal resolution for at least 30 days. Unresolved disputes shall be settled by binding arbitration under the American Arbitration Association rules, conducted in the U.S. Virgin Islands. You waive any right to participate in class action lawsuits or class-wide arbitration.</p>
-
-    <h2>13. Third-Party Services</h2>
-    <p>The App integrates third-party services subject to their own terms. We are not responsible for their practices.</p>
-    <table>
-      <thead>
-        <tr><th>Service</th><th>Terms</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Apple App Store</td><td><a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms</a></td></tr>
-        <tr><td>Google Play Store</td><td><a href="https://play.google.com/about/play-terms/">Google Play Terms</a></td></tr>
-        <tr><td>Twilio</td><td><a href="https://www.twilio.com/legal/tos">Twilio Terms</a></td></tr>
-        <tr><td>Google AdMob</td><td><a href="https://ads.google.com/terms/">Google Ads Terms</a></td></tr>
-        <tr><td>Have I Been Pwned</td><td><a href="https://haveibeenpwned.com/API/v3">HIBP API</a></td></tr>
-      </tbody>
-    </table>
-
-    <h2>14. General Provisions</h2>
-    <p><strong>Entire Agreement.</strong> These Terms and our Privacy Policy constitute the entire agreement between you and Fadelock.</p>
-    <p><strong>Severability.</strong> If any provision is found unenforceable, it shall be limited to the minimum extent necessary; remaining provisions remain in effect.</p>
-    <p><strong>Waiver.</strong> Failure to enforce any provision does not constitute a waiver.</p>
-    <p><strong>Assignment.</strong> You may not assign these Terms without our consent. We may assign without restriction.</p>
-    <p><strong>Force Majeure.</strong> We are not liable for failures caused by circumstances beyond our reasonable control.</p>
-
-    <h2>15. Contact Us</h2>
-    <p>If you have questions about these Terms, please contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:fadelockapp@gmail.com">fadelockapp@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="https://fadelockapp.github.io/fadelock-legal/">fadelockapp.github.io/fadelock-legal</a></p>
-
-    <div class="footer">
-      &copy; 2026 Fadelock. All rights reserved.
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="index.html" class="header-brand-link">
+          <img src="icon.png" alt="Fadelock" class="header-logo">
+          <span class="header-title">Fadelock</span>
+        </a>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main class="legal-page">
+    <article class="legal-content">
+      <h1>Terms of Service</h1>
+      <p class="legal-updated">Last updated: June 9, 2026</p>
+
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using the Fadelock application or website (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
+      </section>
+
+      <section>
+        <h2>2. Description of Service</h2>
+        <p>Fadelock is a password generator and encrypted vault application. The Service allows you to generate cryptographically secure passwords, and store encrypted credentials locally on your device. Nothing is ever uploaded to our servers.</p>
+      </section>
+
+      <section>
+        <h2>3. User Accounts</h2>
+        <p>To use certain features, you must register an account by verifying your phone number. You are responsible for maintaining the confidentiality of your account and for all activities that occur under your account.</p>
+      </section>
+
+      <section>
+        <h2>4. Encryption Key Responsibility</h2>
+        <p><strong>Important:</strong> You are solely responsible for your encryption key. Fadelock does not store, transmit, or have access to your encryption key. If you lose your encryption key, your vault data cannot be recovered by anyone, including Fadelock. We strongly recommend storing your encryption key in a secure, separate location.</p>
+      </section>
+
+      <section>
+        <h2>5. Subscription Plans</h2>
+        <h3>5.1 Free Tier</h3>
+        <p>The free tier provides limited access: 1 password generation per 12 hours, maximum 10-character passwords, and 5-second auto-delete timer. Free users will see advertisements.</p>
+
+        <h3>5.2 Pro Plan ($2.99/month or $29.99/year)</h3>
+        <p>Pro subscribers receive unlimited password generations, 15-character passwords, 30-second auto-delete timer, encrypted vault (20 credentials), breach monitoring, encrypted local backup/restore, password history, and ad-free experience.</p>
+
+        <h3>5.3 Family Plan ($4.99/month or $44.99/year)</h3>
+        <p>Family plan includes all Pro features plus up to 5 family members, 30 credentials per member, and encrypted credential sharing between members.</p>
+
+        <h3>5.4 Remove Ads ($14.99 one-time)</h3>
+        <p>A one-time purchase that permanently removes all advertisements from the free tier without upgrading to Pro.</p>
+
+        <h3>5.5 Billing</h3>
+        <p>Subscriptions are billed through Apple App Store or Google Play Store. Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel subscriptions in your device's store settings.</p>
+      </section>
+
+      <section>
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the Service for any illegal purpose.</li>
+          <li>Attempt to reverse-engineer, decompile, or disassemble the application.</li>
+          <li>Attempt to circumvent subscription restrictions or rate limits.</li>
+          <li>Share or redistribute promo codes or developer codes.</li>
+          <li>Use automated systems to access the Service in a manner that exceeds reasonable use.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Intellectual Property</h2>
+        <p>The Fadelock name, logo, and all associated branding, code, and content are the intellectual property of Fadelock. You may not copy, modify, or distribute any part of the Service without prior written consent.</p>
+      </section>
+
+      <section>
+        <h2>8. Disclaimer of Warranties</h2>
+        <p>The Service is provided "as is" and "as available" without warranties of any kind, either express or implied. While we use industry-standard cryptographic methods, we do not guarantee that the Service will be uninterrupted, error-free, or completely secure against all threats.</p>
+      </section>
+
+      <section>
+        <h2>9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Fadelock shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, loss of profits, or security breaches resulting from:</p>
+        <ul>
+          <li>Loss of your encryption key.</li>
+          <li>Unauthorized access to your device.</li>
+          <li>Third-party breaches unrelated to our Service.</li>
+          <li>Interruption or unavailability of the Service.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. Auto-Delete Feature</h2>
+        <p>Generated passwords are automatically deleted after the configured timer expires (5 seconds for free users, 30 seconds for paid users). Once deleted, passwords cannot be recovered unless previously saved to the vault. Fadelock is not responsible for passwords lost due to the auto-delete feature.</p>
+      </section>
+
+      <section>
+        <h2>11. Termination</h2>
+        <p>We reserve the right to suspend or terminate your access to the Service at any time for violation of these Terms. Upon termination, your right to use the Service ceases immediately. Locally stored encrypted data remains on your device.</p>
+      </section>
+
+      <section>
+        <h2>12. Changes to Terms</h2>
+        <p>We may modify these Terms at any time. Material changes will be communicated via in-app notification. Continued use of the Service after changes constitutes acceptance of the updated Terms.</p>
+      </section>
+
+      <section>
+        <h2>13. Governing Law</h2>
+        <p>These Terms are governed by and construed in accordance with applicable laws. Any disputes arising from these Terms shall be resolved through binding arbitration or in the courts of competent jurisdiction.</p>
+      </section>
+
+      <section>
+        <h2>14. Contact Us</h2>
+        <p>If you have questions about these Terms of Service, contact us at:</p>
+        <p><a href="mailto:fadelockapp@gmail.com">fadelockapp@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icon.png" alt="Fadelock" class="footer-logo">
+        <span>Fadelock</span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:fadelockapp@gmail.com">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fadelock. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
