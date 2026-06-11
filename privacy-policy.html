@@ -4,114 +4,144 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Fadelock</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Fadelock Privacy Policy. Learn how we protect your data with zero-knowledge architecture.">
+  <meta name="theme-color" content="#0D0F14">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back-link">&larr; Back to Fadelock Legal</a>
-
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Fadelock — Password Generator &amp; Vault</p>
-    <p class="effective-date">Effective Date: April 25, 2026 &middot; Last Updated: April 25, 2026</p>
-
-    <h2>1. Introduction</h2>
-    <p>Fadelock is a <strong>zero-knowledge, local-first</strong> password generator and encrypted vault application. This means that your data belongs entirely to you, is stored on your device, and is encrypted with a key that only you control. We cannot access, read, decrypt, or recover your data under any circumstances.</p>
-    <p>This Privacy Policy explains how the App operates, what minimal data is processed by third-party services embedded in the App, and your responsibilities as the sole custodian of your data. By using Fadelock, you agree to the practices described in this policy.</p>
-
-    <h2>2. Our Zero-Knowledge Architecture</h2>
-    <blockquote>
-      <p><strong>Fadelock does not store, collect, or have access to any of your personal information, passwords, or credentials.</strong> Everything is encrypted locally on your device. We have zero knowledge of your data.</p>
-    </blockquote>
-    <p>The following table summarizes where your data lives and who can access it:</p>
-    <table>
-      <thead>
-        <tr><th>Data</th><th>Where It Is Stored</th><th>Who Can Access It</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Passwords and credentials</td><td>Your device only (AES-256-CBC encrypted)</td><td>Only you</td></tr>
-        <tr><td>Encryption key</td><td>Your device's secure enclave (iOS Keychain / Android Keystore)</td><td>Only you</td></tr>
-        <tr><td>Audit log</td><td>Your device only (AES-256 encrypted)</td><td>Only you</td></tr>
-        <tr><td>App preferences and settings</td><td>Your device only</td><td>Only you</td></tr>
-        <tr><td>Vault backups</td><td>Created locally, stored wherever you choose</td><td>Only you</td></tr>
-      </tbody>
-    </table>
-    <p>For Pro and Family subscribers who opt into <strong>cloud sync</strong>, your encrypted credential data (ciphertext) is transmitted to our server to enable cross-device access. The server stores only the encrypted ciphertext. We cannot decrypt it because we never possess your encryption key. If you do not enable cloud sync, no credential data ever leaves your device.</p>
-
-    <h2>3. Your Responsibility</h2>
-    <blockquote>
-      <p><strong>You are solely responsible for the security of your data.</strong> Fadelock provides the tools — AES-256 encryption, biometric protection, secure key storage — but the responsibility for safeguarding your encryption key, device access, and vault backups rests entirely with you.</p>
-    </blockquote>
-    <p><strong>Encryption Key.</strong> Your encryption key is generated and stored exclusively on your device's hardware-backed secure enclave. We do not store, transmit, or have any copy of this key. If you lose access to your encryption key — by resetting your device, uninstalling the App without backing up the key, or any other means — <strong>your encrypted data is permanently and irreversibly lost.</strong> We cannot recover it for you.</p>
-    <p><strong>Device Security.</strong> The security of your vault depends on the security of your device. If your device is compromised (jailbroken, rooted, infected with malware, or accessed by an unauthorized person), your data may be at risk regardless of the App's encryption.</p>
-    <p><strong>Vault Backups.</strong> If you export a vault backup, that file contains your encrypted credentials. You are responsible for storing backup files securely.</p>
-    <p><strong>Shared Credentials.</strong> If you use the credential sharing feature (Family plan), you are responsible for choosing what to share and with whom. Shared credentials are encrypted with a unique per-share key and transmitted via time-limited deep links (24-hour expiry), but once a recipient saves the credential, it is under their control.</p>
-
-    <h2>4. What Fadelock Does Not Collect</h2>
-    <p>To be explicit, Fadelock itself does <strong>not</strong> collect, store, or transmit:</p>
-    <table>
-      <thead>
-        <tr><th>Data Type</th><th>Collected by Fadelock?</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Your name, email, or personal details</td><td>No</td></tr>
-        <tr><td>Your passwords or credentials (plaintext or encrypted)</td><td>No</td></tr>
-        <tr><td>Your encryption key</td><td>No</td></tr>
-        <tr><td>Your browsing history</td><td>No</td></tr>
-        <tr><td>Your contacts</td><td>No</td></tr>
-        <tr><td>Your photos, camera, or microphone data</td><td>No</td></tr>
-        <tr><td>Your precise location (GPS)</td><td>No</td></tr>
-        <tr><td>Your biometric data (Face ID / fingerprint templates)</td><td>No — processed entirely by your device OS</td></tr>
-      </tbody>
-    </table>
-
-    <h2>5. Third-Party Services</h2>
-    <p>While Fadelock itself collects no personal data, the App integrates third-party services that may process limited data independently. These services operate under their own privacy policies, and any data they process is handled by them — not by Fadelock.</p>
-    <table>
-      <thead>
-        <tr><th>Service</th><th>What It Does</th><th>What Data It Processes</th><th>Privacy Policy</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Google AdMob</td><td>Displays ads for free-tier users</td><td>Device advertising ID, IP address, general location</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
-        <tr><td>Twilio Verify</td><td>Sends SMS verification codes (if configured)</td><td>Phone number</td><td><a href="https://www.twilio.com/legal/privacy">Twilio Privacy Statement</a></td></tr>
-        <tr><td>Have I Been Pwned</td><td>Breach monitoring</td><td>First 5 chars of a SHA-1 hash prefix only (k-anonymity)</td><td><a href="https://haveibeenpwned.com/Privacy">HIBP Privacy Policy</a></td></tr>
-        <tr><td>Firebase Analytics</td><td>Anonymized usage analytics (if configured)</td><td>Device type, OS version, anonymized events</td><td><a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></td></tr>
-      </tbody>
-    </table>
-    <p><strong>Regarding AdMob:</strong> Advertisements are displayed only to free-tier users. If you subscribe to any paid plan or purchase the "Remove Ads" option ($3.99), AdMob is fully disabled and no ad-related data processing occurs. You can also limit ad personalization through your device settings (iOS: Settings &rarr; Privacy &amp; Security &rarr; Tracking; Android: Settings &rarr; Privacy &rarr; Ads).</p>
-    <p><strong>Regarding Breach Checks:</strong> When the App checks your passwords against known breaches, it uses the k-anonymity model — only the first 5 characters of a SHA-1 hash prefix are sent to the HIBP API. Your actual passwords are never transmitted, and HIBP cannot determine which password you are checking.</p>
-
-    <h2>6. Local Data Storage</h2>
-    <table>
-      <thead>
-        <tr><th>Storage Mechanism</th><th>What It Stores</th><th>Security Level</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>SecureStore (hardware-backed)</td><td>Encryption key, authentication tokens</td><td>Highest — hardware-isolated, biometric-protected</td></tr>
-        <tr><td>AsyncStorage (app sandbox)</td><td>Encrypted credentials, encrypted audit log, preferences</td><td>Application-level — encrypted by the App before storage</td></tr>
-      </tbody>
-    </table>
-    <p>No data is stored on our servers unless you explicitly enable cloud sync (Pro/Family plans), in which case only encrypted ciphertext is transmitted and stored.</p>
-
-    <h2>7. Children's Privacy</h2>
-    <p>Fadelock is not directed at children under the age of 13 (or the applicable age of digital consent in your jurisdiction). Since Fadelock does not collect personal information, there is no risk of inadvertent data collection from minors. However, parents and guardians should supervise their children's use of any application that stores sensitive data.</p>
-
-    <h2>8. Your Rights</h2>
-    <p>Since Fadelock stores all data locally on your device, you have complete and immediate control over your data at all times.</p>
-    <p><strong>Access and Export.</strong> You can view all stored credentials in the Vault, review the Audit Log, and check the Security Dashboard at any time. Paid subscribers can export vault data as an encrypted JSON backup.</p>
-    <p><strong>Deletion.</strong> You can delete individual credentials, clear the audit log, or uninstall the App to remove all locally stored data. If you have enabled cloud sync, contact us to request deletion of cloud-stored ciphertext.</p>
-    <p><strong>No Data Requests Needed.</strong> Because we do not hold your personal data, there is no need to submit data access or deletion requests to us for locally stored information. You already have full control.</p>
-
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy to reflect changes in the App or legal requirements. Material changes will be communicated through an in-app notification or by updating the "Last Updated" date above. Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
-
-    <h2>10. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:fadelockapp@gmail.com">fadelockapp@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="https://fadelockapp.github.io/fadelock-legal/">fadelockapp.github.io/fadelock-legal</a></p>
-
-    <div class="footer">
-      &copy; 2026 Fadelock. All rights reserved.
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="index.html" class="header-brand-link">
+          <img src="icon.png" alt="Fadelock" class="header-logo">
+          <span class="header-title">Fadelock</span>
+        </a>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main class="legal-page">
+    <article class="legal-content">
+      <h1>Privacy Policy</h1>
+      <p class="legal-updated">Last updated: June 9, 2026</p>
+
+      <section>
+        <h2>1. Introduction</h2>
+        <p>Fadelock ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Fadelock mobile application and website (collectively, the "Service").</p>
+      </section>
+
+      <section>
+        <h2>2. Zero-Knowledge Architecture</h2>
+        <p>Fadelock is built on a zero-knowledge architecture. This means:</p>
+        <ul>
+          <li>We <strong>never</strong> see, store, or transmit your generated passwords.</li>
+          <li>Your encryption key is derived locally on your device and never leaves it.</li>
+          <li>Vault credentials are encrypted with AES-256 before being stored.</li>
+          <li>We cannot access, decrypt, or recover your vault data under any circumstances.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Information We Collect</h2>
+        <h3>3.1 Account Information</h3>
+        <p>When you register, we collect your phone number solely for verification purposes. We do not store your phone number after verification is complete.</p>
+
+        <h3>3.2 Subscription Data</h3>
+        <p>If you subscribe to a paid plan, payment processing is handled entirely by Apple (App Store) or Google (Google Play). We receive a subscription status confirmation but never see your payment details.</p>
+
+        <h3>3.3 Analytics (Optional)</h3>
+        <p>We collect anonymous, aggregated usage analytics (e.g., feature usage frequency, crash reports) to improve the app. This data cannot be tied to individual users or their passwords. You can opt out in Settings.</p>
+
+        <h3>3.4 Advertising</h3>
+        <p>Free-tier users may see ads served by Google AdMob. AdMob may collect device identifiers for ad personalization. You can opt out of personalized ads in your device settings. Paid users and those who purchase "Remove Ads" see no advertisements.</p>
+      </section>
+
+      <section>
+        <h2>4. How We Use Your Information</h2>
+        <ul>
+          <li>To verify your identity during registration.</li>
+          <li>To manage your subscription status.</li>
+          <li>To provide cloud sync for Pro/Family subscribers (encrypted data only).</li>
+          <li>To send push notifications (breach alerts, expiry reminders) if enabled.</li>
+          <li>To improve app performance and fix bugs via anonymous analytics.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Data Storage and Security</h2>
+        <p>All sensitive data (passwords, credentials, encryption keys) is stored exclusively on your device using platform-native secure storage (iOS Keychain / Android Keystore). Cloud-synced vault data is encrypted end-to-end before transmission — our servers store only ciphertext that is unreadable without your local encryption key.</p>
+      </section>
+
+      <section>
+        <h2>6. Breach Monitoring</h2>
+        <p>Fadelock uses the Have I Been Pwned API with k-anonymity to check passwords against known breaches. Only the first 5 characters of a SHA-1 hash prefix are sent — your actual passwords are never transmitted, even in hashed form.</p>
+      </section>
+
+      <section>
+        <h2>7. Third-Party Services</h2>
+        <ul>
+          <li><strong>Twilio</strong> — Phone number verification (SMS delivery only).</li>
+          <li><strong>Google AdMob</strong> — Advertising for free-tier users.</li>
+          <li><strong>Firebase Analytics</strong> — Anonymous usage analytics.</li>
+          <li><strong>Have I Been Pwned</strong> — Breach monitoring via k-anonymity.</li>
+          <li><strong>Apple/Google</strong> — In-app purchase and subscription management.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Data Retention</h2>
+        <p>We retain minimal data. Verification tokens expire after use. Analytics data is aggregated and anonymized. If you delete your account, all server-side data associated with your account is permanently erased within 30 days.</p>
+      </section>
+
+      <section>
+        <h2>9. Children's Privacy</h2>
+        <p>Fadelock is not intended for children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
+      </section>
+
+      <section>
+        <h2>10. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the data we hold about you.</li>
+          <li>Request deletion of your account and associated data.</li>
+          <li>Opt out of analytics and personalized advertising.</li>
+          <li>Export your vault data at any time (paid users).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via in-app notification or email. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2>12. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:</p>
+        <p><a href="mailto:fadelockapp@gmail.com">fadelockapp@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icon.png" alt="Fadelock" class="footer-logo">
+        <span>Fadelock</span>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:fadelockapp@gmail.com">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fadelock. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
